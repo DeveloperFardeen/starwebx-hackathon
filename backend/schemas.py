@@ -1,11 +1,11 @@
-from pydantic import BaseModel, EmailStr, Field
+from pydantic import BaseModel, Field
 from typing import Optional, List
 from datetime import datetime
 
 
 # User Schemas
 class UserBase(BaseModel):
-    email: EmailStr
+    email: str
     full_name: str
 
 class UserProfileUpdate(BaseModel):

@@ -7,7 +7,6 @@ python-jose[cryptography]==3.3.0
 passlib[bcrypt]==1.7.4
 python-multipart==0.0.6
 pydantic==2.5.3
-pydantic[email]==2.5.3
 pydantic-settings==2.1.0
 google-auth==2.27.0
 google-auth-oauthlib==1.2.0
