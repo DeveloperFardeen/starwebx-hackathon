@@ -13,6 +13,7 @@ class User(Base):
     full_name = Column(String(255), nullable=False)
     phone = Column(String(20))
     college_name = Column(String(255))
+    roll_no = Column(String(100))
     branch = Column(String(100))
     year_of_study = Column(Integer)
     github_url = Column(String(255))

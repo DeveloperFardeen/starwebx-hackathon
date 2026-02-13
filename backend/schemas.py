@@ -11,6 +11,7 @@ class UserBase(BaseModel):
 class UserProfileUpdate(BaseModel):
     phone: Optional[str] = None
     college_name: Optional[str] = None
+    roll_no: Optional[str] = None
     branch: Optional[str] = None
     year_of_study: Optional[int] = None
     github_url: Optional[str] = None
@@ -22,6 +23,7 @@ class UserResponse(BaseModel):
     full_name: str
     phone: Optional[str]
     college_name: Optional[str]
+    roll_no: Optional[str]
     branch: Optional[str]
     year_of_study: Optional[int]
     github_url: Optional[str]

@@ -33,6 +33,7 @@ const app = createApp({
             profileForm: {
                 phone: '',
                 college_name: '',
+                roll_no: '',
                 branch: '',
                 year_of_study: null,
                 github_url: '',
@@ -51,6 +52,7 @@ const app = createApp({
             return this.user && 
                    this.user.phone && 
                    this.user.college_name && 
+                   this.user.roll_no &&
                    this.user.branch && 
                    this.user.year_of_study;
         }
@@ -138,6 +140,7 @@ const app = createApp({
                 this.profileForm = {
                     phone: this.user.phone || '',
                     college_name: this.user.college_name || '',
+                    roll_name: this.user.roll_no || '',
                     branch: this.user.branch || '',
                     year_of_study: this.user.year_of_study || null,
                     github_url: this.user.github_url || '',
