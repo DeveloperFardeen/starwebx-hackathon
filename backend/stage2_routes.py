@@ -106,8 +106,8 @@ async def get_project_assignment(
 3. List of tech stack used
 4. Screenshot uploads (minimum 3)
 
-**Deadline:** February 13, 2026 23:59:59""",
-        "deadline": "2026-02-13T23:59:59",
+**Deadline:** February 12, 2026 23:59:59""",
+        "deadline": "2026-02-12T23:59:59",
         "total_marks": 100,
         "user_project_id": project.id,
         "submission_status": project.submission_status,

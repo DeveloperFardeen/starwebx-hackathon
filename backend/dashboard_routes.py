@@ -27,6 +27,12 @@ async def get_dashboard(
         stage1_status = "completed"
     if date.today() > date.fromisoformat('2026-02-08'):
         stage1_status = "ended"
+    now = datetime.now()
+    special_start = datetime(2026, 2, 14, 10, 0, 0)
+    special_end = datetime(2026, 2, 14, 15, 0, 0)
+    
+    if special_start <= now <= special_end:
+        stage1_status = "live" 
     
     # Get Stage 2 project
     stage2_project = db.query(Stage2Project).filter(
@@ -43,7 +49,7 @@ async def get_dashboard(
         stage2_status = "coming-soon"
     if date.today() > date.fromisoformat('2026-02-12'):
         stage2_status = "ended"
-    
+   
     # Get unread notifications count
     notifications_count = db.query(Notification).filter(
         Notification.user_id == current_user.id,
